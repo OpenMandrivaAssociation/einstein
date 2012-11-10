@@ -1,0 +1,26 @@
+--- einstein-2.0.dfsg.2.orig/main.cpp
++++ einstein-2.0.dfsg.2/main.cpp
+@@ -31,6 +31,12 @@
+     SDL_SetColorKey(mouse, SDL_SRCCOLORKEY, SDL_MapRGB(mouse->format, 0, 0, 0));
+     screen.setMouseImage(mouse);
+     SDL_FreeSurface(mouse);
++    
++    SDL_Surface *icon = loadImage(L"icon.bmp");
++    SDL_SetColorKey(icon, SDL_SRCCOLORKEY, SDL_MapRGB(icon->format, 0, 0, 0));
++    SDL_WM_SetIcon(icon, NULL);
++    SDL_FreeSurface(icon);
++    
+     SDL_WM_SetCaption("Einstein", NULL);
+ 
+ #ifdef __APPLE__
+--- einstein-2.0.dfsg.2.orig/res/resources.descr
++++ einstein-2.0.dfsg.2/res/resources.descr
+@@ -1,6 +1,7 @@
+ priority = 100
+ 
+ resources = {
++    { name = "icon.bmp" }
+     { name = "cursor.bmp" }
+     { name = "rain.bmp" }
+     { name = "tile.bmp" }
+

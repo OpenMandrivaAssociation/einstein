@@ -1,0 +1,10 @@
+--- utils.h.orig	2005-01-14 19:30:11 +0300
++++ utils.h	2005-01-14 19:36:59 +0300
+@@ -3,6 +3,7 @@
+ 
+ #include <SDL.h>
+ #include <string>
++#include <math.h>
+ #ifdef WIN32
+ #include <sys/time.h>
+ #endif

@@ -1,0 +1,11 @@
+--- einstein-2.0.dfsg.2.orig/puzgen.cpp
++++ einstein-2.0.dfsg.2/puzgen.cpp
+@@ -313,6 +313,8 @@
+ 
+ void genPuzzle(SolvedPuzzle &puzzle, Rules &rules)
+ {
++    srand(time(NULL));
++
+     for (int i = 0; i < PUZZLE_SIZE; i++) {
+         for (int j = 0; j < PUZZLE_SIZE; j++) 
+             puzzle[i][j] = j + 1;

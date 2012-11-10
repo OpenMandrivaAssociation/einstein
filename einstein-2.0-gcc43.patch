@@ -1,0 +1,77 @@
+diff -ur einstein-2.0/convert.h einstein-2.0./convert.h
+--- einstein-2.0/convert.h	2008-10-27 22:30:43 +0000
++++ einstein-2.0./convert.h	2008-10-27 22:41:19 +0000
+@@ -5,6 +5,7 @@
+ #include <iostream>
+ #include <sstream>
+ #include <string>
++#include <typeinfo>
+ 
+ #include "exceptions.h"
+ #include "unicode.h"
+diff -ur einstein-2.0/mkres/compressor.cpp einstein-2.0./mkres/compressor.cpp
+--- einstein-2.0/mkres/compressor.cpp	2008-10-27 22:30:43 +0000
++++ einstein-2.0./mkres/compressor.cpp	2008-10-27 22:39:42 +0000
+@@ -1,4 +1,5 @@
+ #include "compressor.h"
++#include <cstring>
+ #include <zlib.h>
+ #include "convert.h"
+ #include "exceptions.h"
+diff -ur einstein-2.0/mkres/compressor.h einstein-2.0./mkres/compressor.h
+--- einstein-2.0/mkres/compressor.h	2008-10-27 22:30:43 +0000
++++ einstein-2.0./mkres/compressor.h	2008-10-27 22:39:02 +0000
+@@ -3,6 +3,7 @@
+ 
+ 
+ #include <string>
++#include <cstdlib>
+ #include <iostream>
+ #include <list>
+ #include <fstream>
+diff -ur einstein-2.0/mkres/convert.h einstein-2.0./mkres/convert.h
+--- einstein-2.0/mkres/convert.h	2008-10-27 22:30:43 +0000
++++ einstein-2.0./mkres/convert.h	2008-10-27 22:40:08 +0000
+@@ -5,6 +5,7 @@
+ #include <iostream>
+ #include <sstream>
+ #include <string>
++#include <typeinfo>
+ 
+ #include "exceptions.h"
+ #include "unicode.h"
+diff -ur einstein-2.0/mkres/lexal.h einstein-2.0./mkres/lexal.h
+--- einstein-2.0/mkres/lexal.h	2008-10-27 22:30:43 +0000
++++ einstein-2.0./mkres/lexal.h	2008-10-27 22:38:10 +0000
+@@ -3,6 +3,9 @@
+ 
+ 
+ #include "streams.h"
++#include <typeinfo>
++#include <cstring>
++#include <cstdlib>
+ 
+ 
+ class Lexeme
+diff -ur einstein-2.0/mkres/unicode.cpp einstein-2.0./mkres/unicode.cpp
+--- einstein-2.0/mkres/unicode.cpp	2008-10-27 22:30:43 +0000
++++ einstein-2.0./mkres/unicode.cpp	2008-10-27 22:40:37 +0000
+@@ -5,6 +5,7 @@
+ #endif
+ #include "unicode.h"
+ #include "exceptions.h"
++#include <cstring>
+ 
+ 
+ /// Returns length of wide character in utf-8
+diff -ur einstein-2.0/unicode.cpp einstein-2.0./unicode.cpp
+--- einstein-2.0/unicode.cpp	2008-10-27 22:30:43 +0000
++++ einstein-2.0./unicode.cpp	2008-10-27 22:41:53 +0000
+@@ -5,6 +5,7 @@
+ #endif
+ #include "unicode.h"
+ #include "exceptions.h"
++#include <cstring>
+ 
+ 
+ /// Returns length of wide character in utf-8

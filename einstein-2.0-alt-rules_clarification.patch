@@ -1,0 +1,21 @@
+--- einstein-2.0.dfsg.2.orig/res/rules.txt
++++ einstein-2.0.dfsg.2/res/rules.txt
+@@ -52,6 +52,7 @@
+ If you no longer need some tip, remove it by right mouse button click.
+ You can always see removed tips by pressing 'Switch' button.
+ 
++Who loads or restarts a game, does not enter the Hall Of Fame.
+ 
+ "
+ 
+diff -urN einstein-2.0.orig/res/rules_ru.txt einstein-2.0/res/rules_ru.txt
+--- einstein-2.0.orig/res/rules_ru.txt	2007-07-06 13:54:44 +0700
++++ einstein/res/rules_ru.txt	2007-07-06 15:36:56 +0700
+@@ -62,4 +62,7 @@
+ Удаленные подсказки можно посмотреть нажав на кнопку 'Скрытые'. 
+ Повторное нажатие на эту кнопку снова покажет неудаленные подсказки.
+ 
++Загрузивший игру или перезапустивший её автоматически не попадает в
++Зал Славы.
++
+ "

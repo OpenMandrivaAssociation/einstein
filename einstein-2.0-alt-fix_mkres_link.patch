@@ -1,0 +1,11 @@
+diff -urN einstein.orig/mkres/Makefile einstein/mkres/Makefile
+--- einstein.orig/mkres/Makefile	2007-07-06 13:54:44 +0700
++++ einstein/mkres/Makefile	2007-07-06 16:46:10 +0700
+@@ -1,6 +1,6 @@
+ OPTIMIZE=-O6
+ CFLAGS=-Wall $(OPTIMIZE)
+-LNFLAGS=-lz
++LIBS=-lz
+ 
+ TARGET=mkres
+ SOURCES=main.cpp compressor.cpp unicode.cpp streams.cpp table.cpp \
