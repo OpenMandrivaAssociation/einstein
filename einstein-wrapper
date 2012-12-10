@@ -1,0 +1,19 @@
+#!/bin/sh
+BINARY="$0".bin
+if [ "$1" = "-" ]
+then
+  shift
+else
+  case "$LC_ALL" in
+    *_*) ;; # good
+    *)
+    case "$LC_MESSAGES" in
+      *_*) export LC_ALL="$LC_MESSAGES" ;;
+      *)
+      case "$LANG" in
+	*_*) export LC_ALL="$LANG" ;;
+      esac ;;
+    esac ;;
+  esac
+fi
+exec "$BINARY" "$@"    

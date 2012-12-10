@@ -1,7 +1,3 @@
 sources:
-  "einstein-1.0-html-pages.tgz:"	67b560ee72bd9024019d3f060696f0820e5e8154
-  "einstein-2.0-src.tar.gz:"	7ce8388f263e3a021d01f65bf2142dead1f9fee1
-  "einstein.desktop:"	9a0c493b0776cde857480e477c74c2aa5a327480
-  "einstein.png:"	17858a77a8d8b2673fe6d9e26abe815dc7eaec46
-  "einstein-wrapper:"	6acdbfd4a28b0305751b2ef10891ac93d546bf40
-  "icon.bmp:"	f70bbd4a91124ceb559c421cb7da3d1fd9fd3ece
+  "einstein-1.0-html-pages.tgz": 67b560ee72bd9024019d3f060696f0820e5e8154
+  "einstein-2.0-src.tar.gz": 7ce8388f263e3a021d01f65bf2142dead1f9fee1

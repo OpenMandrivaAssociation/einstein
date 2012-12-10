@@ -88,3 +88,10 @@ popd
 %{_datadir}/applications/*.desktop
 %{_datadir}/pixmaps/%{name}.png
 
+
+
+%changelog
+* Wed Mar 14 2012 Andrey Bondrov <abondrov@mandriva.org> 2.0-1mdv2011.0
++ Revision: 784944
+- imported package einstein
+
