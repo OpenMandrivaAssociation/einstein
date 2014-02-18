@@ -1,0 +1,12 @@
+diff -urN einstein-2.0/Makefile einstein-2.0-patched/Makefile
+--- einstein-2.0/Makefile	2011-04-05 23:20:35.000000000 +1100
++++ einstein-2.0-patched/Makefile	2014-02-19 01:08:33.939289063 +1100
+@@ -61,7 +61,7 @@
+ 	./$(TARGET)
+ 
+ install: $(TARGET)
+-	$(INSTALL) -s -D $(TARGET) $(PREFIX)/bin/$(TARGET)
++	$(INSTALL) -D $(TARGET) $(PREFIX)/bin/$(TARGET)
+ 	$(INSTALL) -D einstein.res $(PREFIX)/share/einstein/res/einstein.res
+ 	
+ # DO NOT DELETE THIS LINE -- make depend depends on it.
