@@ -1,7 +1,7 @@
 Summary:	Remake of old DOS game Sherlock which was inspired by Albert Einstein's puzzle
 Name:		einstein
 Version:	2.0
-Release:	2
+Release:	3
 License:	GPLv2+
 Group:		Games/Puzzles
 Url:		http://games.flowix.com/en/index.html
