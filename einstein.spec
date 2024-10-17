@@ -4,7 +4,7 @@ Version:	2.0
 Release:	3
 License:	GPLv2+
 Group:		Games/Puzzles
-Url:		http://games.flowix.com/en/index.html
+Url:		https://games.flowix.com/en/index.html
 Source:		http://www.babichev.info/files/einstein/%{name}-%{version}-src.tar.gz
 Source1:	%{name}-1.0-html-pages.tgz
 Source2:	%{name}-wrapper
